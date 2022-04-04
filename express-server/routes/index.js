@@ -31,7 +31,7 @@ router.post('/htmlFiles', function(req,res) {
               'files': filesPath,
               'results': results
             }
-            res.send(finalResult); //sending all data to client
+            res.send(JSON.stringify(finalResult)); //sending all data to client
       });
     });
   });
