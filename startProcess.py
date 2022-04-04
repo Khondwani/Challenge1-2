@@ -5,6 +5,7 @@ from folium import plugins
 import requests
 import requests, zipfile
 from io import BytesIO
+from scandir import scandir
 
 def generateHtmlMap(lat,lon,mapName):
     # Create the map of guateng
@@ -78,7 +79,7 @@ def downloadAndExtractFromUrl(s3Url):
     zipfolder.extractall()
     # Get the list of all files and directories
     path = "sightings_alerts"
-    obj = os.scandir(path)
+    obj = scandir(path)
     
     # List all files in the specified path
     print("Files and Directories in '% s':" % path)
