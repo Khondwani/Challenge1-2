@@ -19,14 +19,14 @@ def generateHtmlMap(lat,lon,mapName):
     plugins.Fullscreen(position='topright').add_to(mapGuateng)
     # Generate Folders for the maps
     if not os.path.isdir(f"Heatmaps"):
-        os.mkdir("Heatmaps")
+        os.mkdir("Heatmaps", 0o700)
     # Generate an HTML file containing the heatmap
     mapGuateng.save(f"HeatMaps/{mapName}")
 
 def readInFiles(filename):
     # Generate Folders for the processed CSV
     if not os.path.isdir(f"CleanedCSVFiles"):
-        os.mkdir("CleanedCSVFiles")
+        os.mkdir("CleanedCSVFiles", 0o700)
     # Remove duplicates and create new file
     with open("sightings_alerts/"+filename, 'r') as in_file, open('CleanedCSVFiles/RemovedDuplicates'+filename, 'w') as out_file:
         seen = set() # set for fast O(1) amortized lookup
