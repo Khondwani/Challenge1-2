@@ -20,7 +20,7 @@ def generateHtmlMap(lat,lon,mapName):
     if not os.path.isdir(f"Heatmaps"):
         os.mkdir("Heatmaps")
     # Generate an HTML file containing the heatmap
-    mapGuateng.save(f"HeatMaps/{mapName}")
+    mapGuateng.save(f"Heatmaps/{mapName}")
 
 def readInFiles(filename):
     # Generate Folders for the processed CSV
