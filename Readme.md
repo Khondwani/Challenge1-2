@@ -38,6 +38,11 @@ Challenges faced would be firstly trying to understand the data for it was my fi
 
 # Challenge 2: Sighthing data exploration
 
+After trying to figure out what the whole challenge is about I had a few questions to clarify what needs to be done and if i can go above what is being asked of me and i had the pleasure of being aquainted to Devin Norman. He answered all my questions and clarified a few things as to what i was doing if i was heading in the right direction or not. Just a thanks to him and to add on he did speak praises of the Telematics department haha. 
+
+Now as for this challenge i utilised a python script called: statisticalProcess.py that generated different graphs and results with regards to what i found interesting.
+
+ 
 
 # [Back To Home](https://github.com/Khondwani/DiscoveryChallenges)
 # [Go To Challenge 3 Build iOS Application](https://github.com/Khondwani/DiscoveryiOSChallenge)
