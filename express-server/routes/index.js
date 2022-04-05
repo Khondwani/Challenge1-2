@@ -28,10 +28,10 @@ router.post('/htmlFiles', function(req,res) {
         }, function(err, results) {
             console.log(results); //this is state when all files are completely read
             var finalResult = {
-              'files': filesPath,
-              'results': results
+              files: filesPath,
+              results: results
             }
-            res.send(JSON.stringify(finalResult)); //sending all data to client
+            res.json(finalResult); //sending all data to client
       });
     });
   });
